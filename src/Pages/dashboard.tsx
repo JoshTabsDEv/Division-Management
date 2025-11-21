@@ -306,7 +306,7 @@ export default function Dashboard() {
                         <line x1="8" y1="21" x2="16" y2="21"></line>
                         <line x1="12" y1="17" x2="12" y2="21"></line>
                       </svg>
-                      System Type *
+                      Division Category *
                     </label>
                     <select
                       id="system"
@@ -314,12 +314,12 @@ export default function Dashboard() {
                       value={form.system}
                       onChange={handleChange}
                     >
-                      <option value="">Select System</option>
-                      <option value="Enterprise System">Enterprise System</option>
-                      <option value="Department System">Department System</option>
-                      <option value="Branch System">Branch System</option>
-                      <option value="Regional System">Regional System</option>
-                      <option value="Central System">Central System</option>
+                      <option value="">Select Category</option>
+                      <option value="Core Division">Core Division</option>
+                      <option value="Support Division">Support Division</option>
+                      <option value="Administrative Division">Administrative Division</option>
+                      <option value="Technical Division">Technical Division</option>
+                      <option value="Service Division">Service Division</option>
                     </select>
                   </div>
                 </div>
@@ -391,7 +391,7 @@ export default function Dashboard() {
                         <th>Code</th>
                         <th>Division Name</th>
                         <th>Description</th>
-                        <th>System</th>
+                        <th>Category</th>
                         <th>Actions</th>
                       </tr>
                     </thead>
