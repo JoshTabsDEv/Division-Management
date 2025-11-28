@@ -109,7 +109,7 @@ export default function Login() {
   };
 
   return (
-    <GoogleOAuthProvider clientId="1016616466017-03fsmris44cv89qnelaed641obt80dmh.apps.googleusercontent.com">
+    <GoogleOAuthProvider clientId="1018106660411-rvd4p533hvqupsm3qeuflqkd6pj09l2s.apps.googleusercontent.com">
       <div className="login-wrapper-new">
         {/* Top Header Bar */}
         <header className="login-header-bar">
