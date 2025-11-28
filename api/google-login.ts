@@ -12,7 +12,7 @@ const sslConfig = process.env.DB_SSL === 'true' || process.env.DB_SSL_MODE === '
   : undefined;
 
 const client = new OAuth2Client(
-  "1016616466017-03fsmris44cv89qnelaed641obt80dmh.apps.googleusercontent.com"
+  "1018106660411-rvd4p533hvqupsm3qeuflqkd6pj09l2s.apps.googleusercontent.com"
 );
 
 const db = mysql.createPool({
@@ -46,7 +46,7 @@ export default async function handler(req: VercelRequest, res: VercelResponse) {
     // Verify Google Token
     const ticket = await client.verifyIdToken({
       idToken: token,
-      audience: "1016616466017-03fsmris44cv89qnelaed641obt80dmh.apps.googleusercontent.com",
+      audience: "1018106660411-rvd4p533hvqupsm3qeuflqkd6pj09l2s.apps.googleusercontent.com",
     });
 
     const payload = ticket.getPayload();
